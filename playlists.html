@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+ .spotify-card {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.spotify-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  border-radius: 5px;
+  object-fit: cover;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.playlist-info {
+  flex-grow: 1;
+}
+
+h3 {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.spotify-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120%;
+  height: 120%;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("bgpic.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  z-index: -1;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.spotify-card:hover::before {
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .spotify-card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  img {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+    </style>
+</head>
+<body>
+  <nav>
+    <ul>
+       
+        <li><a href="index.html">Home</a></li>
+        
+        
+    </ul>
+</nav>
+    <div class="spotify-card">
+        <img src="chill.jpg" alt="Playlist Cover">
+        <div class="playlist-info">
+          <h3><a href="Chill Hits.html">Chill Hits</a></h3>
+          <p>Number of Songs-15</p>
+        </div>
+      
+      </div>
+      <div class="spotify-card">
+        <img src="sl.jpg" alt="Playlist Cover">
+        <div class="playlist-info">
+          <h3><a href="sl.html">Sir Lank top</a></h3>
+          <p>Number of Songs-10</p>
+        </div>
+        
+          </div>
+          <div class="spotify-card">
+          <img src="sad.jpg" alt="Playlist Cover">
+          <div class="playlist-info">
+            <h3><a href="sad.html">Sad Mood</a></h3>
+            <p>Number of Songs-10</p>
+      </div>
+    </div>
+    <div class="spotify-card">
+    <img src="xx.jpg" alt="Playlist Cover">
+    <div class="playlist-info">
+      <h3><a href="xxx.html">xxxtentacion</a></h3>
+      <p>Number of Songs-10</p>
+</div>
+</div>
+<div class="spotify-card">
+<img src="e.jpg" alt="Playlist Cover">
+<div class="playlist-info">
+  <h3><a href="beast.html">Beast Mode</a></h3>
+  <p>Number of Songs-10</p>
+</div>
+</div>
+<div class="spotify-card">
+<img src="rap.jpg" alt="Playlist Cover">
+<div class="playlist-info">
+  <h3><a href="rap.html">Sinhala Rap</a></h3>
+  <p>Number of Songs-10</p>
+</div>
+
+</body>
+<script src="sad.js"></script>
+</html>
